@@ -4,18 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/firstFrag"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        class="com.clearsky77.fragment_review.fragments.FirstFragment"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/firstFrag"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                class="com.clearsky77.fragment_review.fragments.FirstFragment"/>
 
-    <fragment
-        android:id="@+id/secondFrag"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        class="com.clearsky77.fragment_review.fragments.SecondFragment"/>
+            <fragment
+                android:id="@+id/secondFrag"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                class="com.clearsky77.fragment_review.fragments.SecondFragment"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
