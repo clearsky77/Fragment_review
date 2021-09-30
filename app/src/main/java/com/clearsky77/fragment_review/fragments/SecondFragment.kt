@@ -22,7 +22,7 @@ class SecondFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         toastBtn.setOnClickListener {
-            //Toast.makeText(this, "프래그먼트에서 토스트 띄우기", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "프래그먼트에서 토스트 띄우기", Toast.LENGTH_SHORT).show()
         }
     }
 }
