@@ -12,4 +12,10 @@
         android:layout_height="250dp"
         class="com.clearsky77.fragment_review.fragments.FirstFragment"/>
 
+    <fragment
+        android:id="@+id/secondFrag"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        class="com.clearsky77.fragment_review.fragments.SecondFragment"/>
+
 </LinearLayout>
